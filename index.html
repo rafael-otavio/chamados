@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Chamados</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Sistema de Chamados</h1>
+        <p>Gerenciamento de chamados de suporte</p>
+    </header>
+
+    <main>
+
+        <section class="filtros">
+
+            <div class="campo">
+                <label for="pesquisa">
+                    Pesquisar usuário
+                </label>
+
+                <input
+                    type="text"
+                    id="pesquisa"
+                    placeholder="Digite o nome..."
+                >
+            </div>
+
+            <div class="campo">
+                <label for="prioridade">
+                    Prioridade
+                </label>
+
+                <select id="prioridade">
+                    <option value="">Todas</option>
+                    <option value="Crítica">Crítica</option>
+                    <option value="Alta">Alta</option>
+                    <option value="Média">Média</option>
+                    <option value="Baixa">Baixa</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="status">
+                    Status
+                </label>
+
+                <select id="status">
+                    <option value="">Todos</option>
+                    <option value="Aberto">Aberto</option>
+                    <option value="Em progresso">Em progresso</option>
+                    <option value="Fechado">Fechado</option>
+                </select>
+            </div>
+
+        </section>
+
+        <div class="resumo">
+            <h2>Chamados</h2>
+            <span id="contador"></span>
+        </div>
+
+        <section id="chamados" class="chamados"></section>
+
+    </main>
+    <script src="app.js"></script>
+    <script src="chamados.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
